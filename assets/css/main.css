@@ -1,5 +1,6 @@
 @import './base.css'; 
 
+/* Start Nav Bar */
 .header{
     position: sticky;
     top: 0;
@@ -48,3 +49,74 @@ nav ul li a{
     }
     
 }
+/* End Nav Bar */
+
+/* Start Footer */
+.footer{
+    background-color: #393E46;
+    color: white;
+    padding: 60px 0;
+}
+.footer .row{
+    gap: 50px;
+}
+.footer-lift-side , .footer-right-side{
+    width: calc((100% - 50px) / 2);
+}
+.footer-lift-side{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-lift-side .logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer-lift-side .logo a{
+    color: white;
+}
+.footer-lift-side p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer-lift-side .icon{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+
+}
+
+.footer-lift-side .icon a img{
+    width: 15px;
+    height: 15px;
+    box-sizing: content-box; /*if we dont use box-sizing: content-box; , the icon will disapeare becouse box-sizing: sizing-box; */
+    border: 1px white solid;
+    padding: 10px;
+}
+.footer-right-side{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer-right-side .nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-right-side .nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 7px;
+}
+.footer-right-side .nav h3{
+    font-size: 15px;
+}
+.footer-right-side .nav ul li a{
+    font-size: 12px;
+    color: white;
+}
+/* End Footer */
