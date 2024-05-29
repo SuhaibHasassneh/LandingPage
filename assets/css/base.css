@@ -19,6 +19,16 @@ body{
     width: calc(100% - 300px);
     margin: auto;
 }
+@media (max-width: 425px ){
+    .container{
+       width: 95%;
+    }
+   }
+   @media (min-width:426px ) and (max-width:767px){
+    .container{
+        width: 95%;
+     }
+   }
 .row{
     display: flex;
     justify-content: space-between;
